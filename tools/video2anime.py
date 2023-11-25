@@ -16,7 +16,7 @@ def parse_args():
     parser.add_argument('-i','--input_video_path', type=str, default='/home/ada/'+ 'v3-3.mp4', help='video file or number for webcam')
     parser.add_argument('-m','--model_path', type=str, default='models/AnimeGANv3_Hayao_36.onnx',  help='file path to save the modles')
     parser.add_argument('-o','--output', type=str, default='video/output/' ,help='output path')
-    parser.add_argument('-d','--device', type=str, default='cpu', choices=["cpu","gpu"] ,help='running device')
+    parser.add_argument('-d','--device', type=str, default='gpu', choices=["cpu","gpu"] ,help='running device')
     return parser.parse_args()
 
 def check_folder(path):
